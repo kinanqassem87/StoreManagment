@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73361CF9-83D3-4588-92D9-FBC283F459AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StoreManagment</RootNamespace>
+    <AssemblyName>StoreManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCus.Designer.cs">
+      <DependentUpon>AddCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_About.Designer.cs">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddNewCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddNewCat.Designer.cs">
+      <DependentUpon>FRM_AddNewCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddNewPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddNewPro.Designer.cs">
+      <DependentUpon>FRM_AddNewPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddNewUser.Designer.cs">
+      <DependentUpon>FRM_AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddQty.Designer.cs">
+      <DependentUpon>FRM_AddQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddSup.Designer.cs">
+      <DependentUpon>FRM_AddSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AddUnitTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AddUnitTrans.Designer.cs">
+      <DependentUpon>FRM_AddUnitTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AllCusPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AllCusPay.Designer.cs">
+      <DependentUpon>FRM_AllCusPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AllCusRem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AllCusRem.Designer.cs">
+      <DependentUpon>FRM_AllCusRem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AllUnitsPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AllUnitsPro.Designer.cs">
+      <DependentUpon>FRM_AllUnitsPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BuyBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BuyBill.Designer.cs">
+      <DependentUpon>FRM_BuyBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BuyBillRem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BuyBillRem.Designer.cs">
+      <DependentUpon>FRM_BuyBillRem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CashFromCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CashFromCus.Designer.cs">
+      <DependentUpon>FRM_CashFromCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CatUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CatUpdate.Designer.cs">
+      <DependentUpon>FRM_CatUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ChangePass.Designer.cs">
+      <DependentUpon>FRM_ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CusUpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CusUpd.Designer.cs">
+      <DependentUpon>FRM_CusUpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DisposeBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DisposeBox.Designer.cs">
+      <DependentUpon>FRM_DisposeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Menu.Designer.cs">
+      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PaytoSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PaytoSup.Designer.cs">
+      <DependentUpon>FRM_PaytoSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ProAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ProAmount.Designer.cs">
+      <DependentUpon>FRM_ProAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ProUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ProUpdate.Designer.cs">
+      <DependentUpon>FRM_ProUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_QTYCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_QTYCount.Designer.cs">
+      <DependentUpon>FRM_QTYCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RemovePro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RemovePro.Designer.cs">
+      <DependentUpon>FRM_RemovePro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPAllMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPAllMoney.Designer.cs">
+      <DependentUpon>FRM_REPAllMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPBoxCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPBoxCash.Designer.cs">
+      <DependentUpon>FRM_REPBoxCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPBoxCashDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPBoxCashDet.Designer.cs">
+      <DependentUpon>FRM_REPBoxCashDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPBuyBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPBuyBill.Designer.cs">
+      <DependentUpon>FRM_REPBuyBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPBuyDBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPBuyDBill.Designer.cs">
+      <DependentUpon>FRM_REPBuyDBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPCusAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPCusAcount.Designer.cs">
+      <DependentUpon>FRM_REPCusAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPCusAcountDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPCusAcountDet.Designer.cs">
+      <DependentUpon>FRM_REPCusAcountDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RepPriceOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RepPriceOffer.Designer.cs">
+      <DependentUpon>FRM_RepPriceOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RepPriceOfferDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RepPriceOfferDet.Designer.cs">
+      <DependentUpon>FRM_RepPriceOfferDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPProValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPProValue.Designer.cs">
+      <DependentUpon>FRM_REPProValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPSellBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPSellBill.Designer.cs">
+      <DependentUpon>FRM_REPSellBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPSellDBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPSellDBill.Designer.cs">
+      <DependentUpon>FRM_REPSellDBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPSupAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPSupAcount.Designer.cs">
+      <DependentUpon>FRM_REPSupAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPSupAcountDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPSupAcountDet.Designer.cs">
+      <DependentUpon>FRM_REPSupAcountDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPUintCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPUintCurrent.Designer.cs">
+      <DependentUpon>FRM_REPUintCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPUintCurrentMTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPUintCurrentMTN.Designer.cs">
+      <DependentUpon>FRM_REPUintCurrentMTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SellBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SellBill.Designer.cs">
+      <DependentUpon>FRM_SellBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SellBillRem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SellBillRem.Designer.cs">
+      <DependentUpon>FRM_SellBillRem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SellPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SellPrices.Designer.cs">
+      <DependentUpon>FRM_SellPrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ShowPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ShowPro.Designer.cs">
+      <DependentUpon>FRM_ShowPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ShowProS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ShowProS.Designer.cs">
+      <DependentUpon>FRM_ShowProS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ShowSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ShowSup.Designer.cs">
+      <DependentUpon>FRM_ShowSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SignIn.Designer.cs">
+      <DependentUpon>FRM_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SupUpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SupUpd.Designer.cs">
+      <DependentUpon>FRM_SupUpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_UserManag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_UserManag.Designer.cs">
+      <DependentUpon>FRM_UserManag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_WithdrawBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_WithdrawBox.Designer.cs">
+      <DependentUpon>FRM_WithdrawBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSuppliers.Designer.cs">
+      <DependentUpon>ShowSuppliers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCus.resx">
+      <DependentUpon>AddCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_About.resx">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddNewCat.resx">
+      <DependentUpon>FRM_AddNewCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddNewPro.resx">
+      <DependentUpon>FRM_AddNewPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddNewUser.resx">
+      <DependentUpon>FRM_AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddQty.resx">
+      <DependentUpon>FRM_AddQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddSup.resx">
+      <DependentUpon>FRM_AddSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AddUnitTrans.resx">
+      <DependentUpon>FRM_AddUnitTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AllCusPay.resx">
+      <DependentUpon>FRM_AllCusPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AllCusRem.resx">
+      <DependentUpon>FRM_AllCusRem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AllUnitsPro.resx">
+      <DependentUpon>FRM_AllUnitsPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BuyBill.resx">
+      <DependentUpon>FRM_BuyBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BuyBillRem.resx">
+      <DependentUpon>FRM_BuyBillRem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CashFromCus.resx">
+      <DependentUpon>FRM_CashFromCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CatUpdate.resx">
+      <DependentUpon>FRM_CatUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ChangePass.resx">
+      <DependentUpon>FRM_ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CusUpd.resx">
+      <DependentUpon>FRM_CusUpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DisposeBox.resx">
+      <DependentUpon>FRM_DisposeBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Menu.resx">
+      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PaytoSup.resx">
+      <DependentUpon>FRM_PaytoSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ProAmount.resx">
+      <DependentUpon>FRM_ProAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ProUpdate.resx">
+      <DependentUpon>FRM_ProUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_QTYCount.resx">
+      <DependentUpon>FRM_QTYCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RemovePro.resx">
+      <DependentUpon>FRM_RemovePro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPAllMoney.resx">
+      <DependentUpon>FRM_REPAllMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPBoxCash.resx">
+      <DependentUpon>FRM_REPBoxCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPBoxCashDet.resx">
+      <DependentUpon>FRM_REPBoxCashDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPBuyBill.resx">
+      <DependentUpon>FRM_REPBuyBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPBuyDBill.resx">
+      <DependentUpon>FRM_REPBuyDBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPCusAcount.resx">
+      <DependentUpon>FRM_REPCusAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPCusAcountDet.resx">
+      <DependentUpon>FRM_REPCusAcountDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RepPriceOffer.resx">
+      <DependentUpon>FRM_RepPriceOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RepPriceOfferDet.resx">
+      <DependentUpon>FRM_RepPriceOfferDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPProValue.resx">
+      <DependentUpon>FRM_REPProValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPSellBill.resx">
+      <DependentUpon>FRM_REPSellBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPSellDBill.resx">
+      <DependentUpon>FRM_REPSellDBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPSupAcount.resx">
+      <DependentUpon>FRM_REPSupAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPSupAcountDet.resx">
+      <DependentUpon>FRM_REPSupAcountDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPUintCurrent.resx">
+      <DependentUpon>FRM_REPUintCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPUintCurrentMTN.resx">
+      <DependentUpon>FRM_REPUintCurrentMTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SellBill.resx">
+      <DependentUpon>FRM_SellBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SellBillRem.resx">
+      <DependentUpon>FRM_SellBillRem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SellPrices.resx">
+      <DependentUpon>FRM_SellPrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ShowPro.resx">
+      <DependentUpon>FRM_ShowPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ShowProS.resx">
+      <DependentUpon>FRM_ShowProS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ShowSup.resx">
+      <DependentUpon>FRM_ShowSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SignIn.resx">
+      <DependentUpon>FRM_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SupUpd.resx">
+      <DependentUpon>FRM_SupUpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_UserManag.resx">
+      <DependentUpon>FRM_UserManag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_WithdrawBox.resx">
+      <DependentUpon>FRM_WithdrawBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShowSuppliers.resx">
+      <DependentUpon>ShowSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
